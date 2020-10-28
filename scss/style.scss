@@ -1,0 +1,464 @@
+$primary-color: rgb(34,34,34);
+$text-color: white;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  // font-size: calc(10px + .8vw);
+  // padding-top: .2em;
+}
+
+#CTA {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #CTA-call {
+    a {
+      color: dodgerblue;
+    }
+    border: none;
+    background-color: black;
+
+    ion-icon {
+      color: white;
+      font-size: 1em;
+    }
+  }
+
+  #CTA-socials {
+    font-size: 2em;
+  }
+}
+
+#scroll-anchor {
+  position:relative;
+  top:0;
+  // background-color: red;height:10px;
+}
+#banner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: black;
+  // border: 1px solid dodgerblue;
+  min-height: 15vh;
+  // overflow: hidden;
+  #banner-wrapper {
+    align-items: center;
+    min-height: 15vh;
+  }
+
+  #banner--hydrospark {
+    img {
+      width: 100%;
+    }
+  }
+
+  #banner--hydrospark-logo {
+    img {
+      width: 100%;
+    }
+  }
+
+  #banner-button-div {
+    display: block;
+
+    #banner--button {
+      border: 3px solid white;
+      height: 100px;
+      width: 100%;
+    }
+
+    #banner--button:focus {
+      border-color: yellow;
+    }
+  }
+}
+//This makes the space-around flex property work as intended
+
+#navbar-nav--1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%!important;
+  font-size: 1em;
+}
+
+.sticky-top {
+  top: -1px !important;
+}
+
+.dropdown-menu {
+  left: -50px;
+}
+
+.dropdown-menu.show {
+  position: absolute;
+}
+
+#section03 a {
+  padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.video-wrapper {
+  padding: 0!important;
+  height:100vh;
+  overflow:hidden;
+}
+
+video#bgvideo {
+position: relative;
+top:0%;
+left:50%;
+min-width: 100%;
+width: auto;
+height:100vh;
+z-index: -100;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-0%);
+background: url(Bluewater_Lane-27.JPG) no-repeat;
+background-size: cover;
+}
+
+.gallery {
+  margin-top: 2em;
+#full-width-image {
+  padding: 0!important;
+  background-image: url("../img/Bluewater_Lane-27.JPG");
+  height:500px;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin-bottom: 2em;
+
+}
+  figure {
+    img {
+      width: 100%;
+      height: 302px;
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+#home {
+  #carousel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20vh;
+
+    .carousel-item {
+      max-height: 40vh;
+    }
+
+    #carousel-1 {
+      background-image: url("../img/bathroom1.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+    }
+
+    #carousel-2 {
+      background-image: url("/img/Bluewater_Lane-27.JPG");
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+    }
+
+    #carousel-3 {
+      background-image: url("/img/outsidebar.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+    }
+
+    #carousel-4 {
+      background-image: url("/img/Bluewater_Lane-39.JPG");
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+    }
+  }
+
+  #home--header {
+    position: relative;
+    top: 1vh;
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+#profile-photo {
+  background-color: $primary-color;
+
+  img {
+    background-color: $primary-color;
+    height: auto;
+    width: 30vh;
+    z-index: 2;
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+    border-radius: 50%;
+    border: 5px solid $primary-color;
+  }
+}
+
+#about {
+  h1 {
+    font-size: 2em;
+  }
+  font-size: 1.5em;
+  scroll-margin-top: 112px;
+
+  a {
+    color: dodgerblue;
+  }
+}
+
+.service {
+  scroll-margin-top: 112px;
+  font-size: 1.2em;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ion-icon {
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+.service-text {
+  text-align: center;
+  position: relative;
+  font-size: 2em;
+  // z-index: 1;
+}
+
+#plumbing-section {
+  //font size will need adjusting for the sm breakpoint
+}
+
+#plumbing {
+  display: block;
+  position: relative;
+  height: 25vh;
+  // max-width: 405px;
+  background-image: url("/img/plumbing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gas {
+  display: block;
+  position: relative;
+  height: 25vh;
+  background-image: url("/img/gas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hot-water {
+  display: block;
+  position: relative;
+  height: 25vh;
+  background-image: url("/img/hotwater.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bathrooms {
+  display: block;
+  position: relative;
+  height: 25vh;
+  background-image: url("/img/bathroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-section {
+  scroll-margin-top: 112px;
+
+  #socials {
+    text-align: center;
+    font-size: 5em;
+    text-decoration: none;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+
+  #contact-section--form {
+    border: 2px solid black;
+    font-size: 2em;
+
+    h1 {
+      text-align: center;
+    }
+    color: black;
+    font-weight: 600;
+    background-color: lightgrey;
+    width: 100%;
+
+    input {
+      border-width: 2px;
+      max-width: 100%;
+    }
+
+    textarea {
+      max-height: 100%;
+      resize: none;
+      overflow: hidden;
+      border-width: 2px;
+    }
+
+    #form--message {
+      text-align: left;
+    }
+  }
+}
+
+footer {
+  #list-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      margin-top: 0.5em;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+// breakpoints
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  // // Medium devices (tablets, 768px and down)
+  #banner--hydrospark > img {}
+}
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  #carousel {
+    margin-bottom: 0px!important;
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 2550px) {
+  video#bgvideo {
+    height:auto;
+
+  }
+}
