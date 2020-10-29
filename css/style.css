@@ -132,13 +132,13 @@ body {
     opacity: 0; } }
 
 .video-wrapper {
-  padding: 0 !important;
+  padding: 0 !important !important;
   height: 100vh;
   overflow: hidden; }
 
 video#bgvideo {
   position: relative;
-  top: 0%;
+  top: 0;
   left: 50%;
   min-width: 100%;
   width: auto;
@@ -148,28 +148,58 @@ video#bgvideo {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(0%);
-  background: url(Bluewater_Lane-27.JPG) no-repeat;
+  background: url("Bluewater_Lane-27.JPG") no-repeat;
   background-size: cover; }
 
 .gallery {
   margin-top: 2em; }
-  .gallery #full-width-image {
-    padding: 0 !important;
-    background-image: url("../img/Bluewater_Lane-27.JPG");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2em; }
-  .gallery figure img {
-    width: 100%;
-    height: 302px;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out; }
-    .gallery figure img:hover {
-      transform: scale(1.05); }
+
+#full-width-image {
+  padding: 0 !important !important;
+  background-image: url("../img/Bluewater_Lane-27.JPG");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2em; }
+
+.project-wrapper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center; }
+
+.project-wrapper #wolf-lane {
+  object-position: 10% 50%; }
+
+.project-wrapper #flamingos {
+  object-fit: fill; }
+
+.project-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 100%;
+  width: calc(100%-30px);
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2d2c32; }
+
+.project-wrapper .title {
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.project-wrapper:hover .overlay {
+  opacity: 90%;
+  cursor: pointer; }
 
 #home #carousel {
   position: relative;

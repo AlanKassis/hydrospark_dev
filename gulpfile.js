@@ -24,7 +24,7 @@ function watch() {
   browserSync.init({
     server: {
       baseDir: "D:/atom/hydrospark_dev",
-      index: "hydrospark_gallery.html"
+      index: "hydrospark_projects_page.html"
     }
   });
   // Tell it what to watch
