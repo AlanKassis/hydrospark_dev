@@ -201,6 +201,13 @@ video#bgvideo {
   opacity: 90%;
   cursor: pointer; }
 
+.gallery-img img {
+  width: 100%;
+  height: auto; }
+
+#matterport {
+  background-color: red; }
+
 #home #carousel {
   position: relative;
   width: 100%;

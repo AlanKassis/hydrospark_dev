@@ -270,7 +270,17 @@ video#bgvideo {
         cursor: pointer;
       }
 
+.gallery-img {
 
+  img {
+  width:100%;
+  height:auto;
+}
+}
+
+#matterport {
+  background-color: red;
+}
 
 #home {
   #carousel {
