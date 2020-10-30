@@ -23,12 +23,12 @@ function watch() {
   //Initialize the browserSync with a server object with baseDir and index props
   browserSync.init({
     server: {
-      baseDir: "D:/atom/hydrospark_dev",
+      baseDir: "/Users/alankassis/documents/atom/hydrospark_dev",
       index: "hydrospark_projects_page.html"
     }
   });
   // Tell it what to watch
-  gulp.watch("D:/atom/hydrospark_dev/**/*.scss", style);
+  gulp.watch("/Users/alankassis/documents/atom/hydrospark_dev/**/*.scss", style);
   // Tell it to reload
   gulp.watch("./**/*.html").on("change", browserSync.reload);
   // gulp.watch("./**/*.js").on("change", browserSync.reload);
