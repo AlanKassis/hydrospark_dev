@@ -93,62 +93,64 @@
 
 <body>
   <!-- TODO: add trinity developments -->
-  <div class="container my-4" id="matterport">
+  <div class="container-fluid my-4" id="matterport">
     <div class="d-flex flex-column justify-content-around align-items-center">
       <h1 class="my-4"> 34 Bluewater Lane </h1>
       <!-- TODO: add matterport iframe -->
       <div>
-        <iframe width="853" height="480" src="https://my.matterport.com/show/?m=DXZqDJrniTY" frameborder="0" allowfullscreen allow="xr-spatial-tracking">
+        <iframe class="responsive-iframe" width="853px" height="480" src="https://my.matterport.com/show/?m=DXZqDJrniTY" frameborder="0" allowfullscreen allow="xr-spatial-tracking">
         </iframe>
       </div>
     </div>
   </div>
 
-  <div class="container">
-      <div class="row" style="background-color:grey">
-        <div class="col-md-4 gallery-img p-1">
-          <!-- TODO: add 1 pictures to this column -->
-          <img src="img/blue_water/BW_front.jpg">
-          <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
-        </div>
-        <!-- TODO: add 3 pictures to this column -->
-        <div class="col-md-4 gallery-img p-1">
-          <!-- TODO: add 1 pictures to this column -->
-          <img src="img/blue_water/BW_bar.jpg">
-          <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
-        </div>
-        <div class="col-md-4 gallery-img p-1">
-          <!-- TODO: add 1 pictures to this column -->
-          <img src="img/blue_water/BW_garage.jpg">
-          <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
-        </div>
+  <div class="container-fluid" id="gallery">
+    <div class="row">
+      <div class="col-md-6 gallery-img p-1">
+        <!-- TODO: add 1 pictures to this column -->
+        <img src="img/blue_water/BW_front.jpg">
+        <div class="gallery-text"></div>
       </div>
-      <div class="row" style="background-color:grey">
-        <div class="col-md-12 gallery-img p1">
-          <!-- use a div and set background image to cover instead -->
-          <img src="img/blue_water/BW_outdoor.jpg" alt="">
-        </div>
+      <!-- TODO: add 3 pictures to this column -->
+      <div class="col-md-6 gallery-img p-1">
+        <!-- TODO: add 1 pictures to this column -->
+        <img src="img/blue_water/BW_bar.jpg">
+        <div class="gallery-text"></div>
       </div>
-      <div class="row">
+    </div>
+    <div class="row">
+      <div class="col-md-12 gallery-img p-1">
+        <!-- use a div and set background image to cover instead -->
+        <img src="img/blue_water/BW_outdoor.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-4 gallery-img p-1">
         <!-- TODO: add 1 pictures to this column -->
         <img src="img/blue_water/BW_bath.jpg">
-        <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-text"></div>
       </div>
       <!-- TODO: add 3 pictures to this column -->
       <div class="col-md-4 gallery-img p-1">
         <!-- TODO: add 1 pictures to this column -->
         <img src="img/blue_water/BW_bathroom.jpg">
-        <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-text"></div>
       </div>
       <div class="col-md-4 gallery-img p-1">
         <!-- TODO: add 1 pictures to this column -->
         <img src="img/blue_water/BW_bedroom.jpg">
-        <div class="gallery-text">Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-text"></div>
       </div>
     </div>
-</div>
+    <div class="row">
+      <div class="col-md-12 gallery-img p-1">
+        <!-- TODO: add 1 pictures to this column -->
+        <img src="img/blue_water/BW_garage.jpg">
+        <div class="gallery-text"></div>
+      </div>
     </div>
+  </div>
+  </div>
 
 
 
